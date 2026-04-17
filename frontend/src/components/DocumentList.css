@@ -1,0 +1,79 @@
+.no-docs {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-align: center;
+  padding: 16px 0;
+}
+
+.doc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.doc-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.doc-item:hover {
+  background: var(--surface2);
+  border-color: var(--border);
+}
+
+.doc-item.selected {
+  background: rgba(124, 106, 247, 0.1);
+  border-color: var(--accent);
+}
+
+.doc-item-icon { font-size: 1.2rem; flex-shrink: 0; }
+
+.doc-item-info {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.doc-item-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.doc-item-meta {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--muted);
+}
+
+.doc-delete-btn {
+  background: rgba(247, 106, 106, 0.1);
+  border: 1px solid rgba(247, 106, 106, 0.2);
+  color: var(--danger);
+  border-radius: 4px;
+  width: 22px;
+  height: 22px;
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.doc-delete-btn:hover {
+  background: rgba(247, 106, 106, 0.2);
+}
