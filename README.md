@@ -1,12 +1,11 @@
 # DocMind – RAG Question & Test System
 
-A full-stack RAG app using **100% free tools**:
 - **LLM**: Groq API (free tier, Llama 3.3 70B) — get key at https://console.groq.com
 - **Embeddings**: sentence-transformers running locally on CPU (no API needed)
 - **Vector DB**: ChromaDB (local, free)
 - **Frontend**: React
 
-## Cost: $0
+
 - Groq free tier = 14,400 requests/day, no credit card needed
 - Embeddings run on your own machine (~90MB model, one-time download)
 
@@ -67,23 +66,8 @@ Open http://localhost:3000
 
 ---
 
-## Project Structure
 
-```
-rag-system/
-├── backend/
-│   ├── main.py            # FastAPI (Groq + sentence-transformers + ChromaDB)
-│   ├── requirements.txt
-│   ├── uploads/           # auto-created
-│   └── chroma_db/         # auto-created
-└── frontend/
-    ├── public/index.html
-    └── src/
-        ├── App.js / App.css
-        ├── index.js / index.css
-        └── components/
-            ├── Upload, DocumentList, Chat, TestPanel
-```
+
 
 ## API Endpoints
 
